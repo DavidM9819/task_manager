@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+.section {
+  background-color: white;
+}
+
+.sectionResult {
+  border: 1px solid hsl(0, 0%, 87%);
+  margin-top: 10px;
+}
+
+.section__title {
+  font-size: 20px;
+  margin: 0;
+}

@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.body {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(247, 240, 240);
+  font-family: "Lato", sans-serif;
+  word-break: break-word;
+}

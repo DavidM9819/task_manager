@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+.list__tasks {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.list__task--item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.list__task--done {
+  text-decoration: line-through;
+}
