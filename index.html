@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasks Manager</title>
+    <link rel="icon" href="picture/icon.png" >
+    <meta property="og:image" content="picture/intro.png" >
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -13,6 +15,12 @@
       referrerpolicy="no-referrer"
     />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/body.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/section.css" rel="stylesheet" />
+    <link href="css/list.css" rel="stylesheet" />
+    <link href="css/buttons.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,10 +36,24 @@
 
     <script defer src="js/script.js"></script>
   </head>
-  <body>
-    <form class="js-form">
-      <input class="js-newTask" />
-      <button>Dodaj Zadanie</button>
-      <ul class="js-tasks"></ul>
+  <body class="body">
+    <header class="header">
+      <h1>Lista zadań</h1>
+  </header>
+  <legend class="formLegend">
+    Dodaj nowe zadanie
+  </legend>
+    <section class="section"><form class=" form js-form">
+      <input class=" formField js-newTask"  
+      placeholder="Co jest do zrobienia?" />
+      <button class="addTasksButton"><span class="addTasksButton-text">Dodaj Zadanie</span></button>
+      </section>
+    <section class="section sectionResult">
+      <header class="lowerHeaderResult">
+        <h2 class="lowerHeaderResult__title js-lowerHeader">Lista zadań</h2>
+        <div class="buttons"></div>
+      </header>
+      <ul class=" list__tasks js-tasks"></ul></section>
+    </section>
   </body>
 </html>
